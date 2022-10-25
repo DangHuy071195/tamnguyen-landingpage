@@ -28,7 +28,12 @@
 					<div class="logo-bottom"></div>
 					<div class="slogan"></div>
 					<div class="time">CHỈ CÒN ...VÉ</div>
-					<div class="clock"></div>
+					<div class="clock" id="clock">
+						<div class="count-down" id="days"></div>
+						<div class="count-down" id="hours"></div>
+						<div class="count-down" id="minutes"></div>
+						<div class="count-down" id="seconds"></div>
+					</div>
 					<div class="video">
 						<div class="right">
 							<div class="content">
@@ -165,18 +170,17 @@
 					<input type="text" placeholder="Họ và Tên:" /><br />
 					<input type="text" placeholder="Số điện thoại:" />
 					<div class="selections">
-						<label for="">Hạng vé:</label>
-						<div class="checkbox">
-							<input type="checkbox" name="ticket" id="online" value="OnLine" />
-							<label for="online">OnLine</label>
+						<div class="form-input">
+							<label for="online">Vé OnLine:</label>
+							<input type="text" name="ticket" id="online" placeholder="Số lượng" />
 						</div>
-						<div class="checkbox">
-							<input type="checkbox" name="ticket" value="GE" id="GE" />
-							<label for="GE">GE</label>
+						<div class="form-input">
+							<label for="GE">Vé Thường:</label>
+							<input type="text" name="ticket" id="GE" placeholder="Số lượng" />
 						</div>
-						<div class="checkbox">
-							<input type="checkbox" name="ticket" id="VVIP" value="OnLine" />
-							<label for="VVIP">VVIP ()</label>
+						<div class="form-input">
+							<label for="VVIP">Vé Vip:</label>
+							<input type="text" name="ticket" id="VVIP" placeholder="Số lượng" />
 						</div>
 					</div>
 					<div class="selections cities">
@@ -210,6 +214,8 @@
 				</form>
 			</div>
 		</div>
+
+		<script src="./js/count-down.js"></script>
 	</body>
 </html>
 

@@ -7,6 +7,11 @@
 	font-weight: 500;
 	src: url('../Font/SVN-CenturyGothic-Bold.otf') format('opentype');
 }
+@font-face {
+	font-family: SVN-CenturyGothic-Black;
+	font-weight: 600;
+	src: url('../Font/SVN-CenturyGothic-SemiBold.otf') format('opentype');
+}
 
 @font-face {
 	font-family: SVN-CenturyGothic-Black;
@@ -27,7 +32,7 @@
 	height: 100vh;
 	max-width: 1200px;
 	margin: 0 auto;
-	background: url(../nen.png) left top no-repeat;
+	background: url(../nen.png) center no-repeat;
 	height: 6801px;
 }
 
@@ -43,9 +48,9 @@
 	background: url(../images/header-bg-center.png) left top repeat-x;
 	height: 67px;
 	display: flex;
-	padding: 0 175px;
+	/* padding: 0 175px; */
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .container .header .content .content-left {
@@ -57,19 +62,11 @@
 	background: url(../2.png) right 13px no-repeat;
 	height: 67px;
 	width: 200px;
+	cursor: pointer;
 }
 
 .container .top {
-	/* background: url(../images/bg-top.png) left top no-repeat;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        padding-top: 20px; */
 	padding-top: 20px;
-}
-.container .top {
-	/* justify-content: space-between; */
 }
 
 .container .top > .content {
@@ -84,29 +81,22 @@
 }
 
 .container .top > .content .logo-left .tamnguyen-logo {
-	background: url(../images/tamnguyen-logo.png) left top no-repeat;
-	width: 242px;
-	height: 78px;
+	background: url(../images/3.png) left top no-repeat;
+	width: 380px;
+	height: 120px;
 }
 .container .top > .content .logo-left .kichtailoc-logo {
-	background: url(../images/4.png) left top no-repeat;
-	width: 430px;
-	height: 220px;
-}
-.container .top > .content .logo-right {
-	background: url(../images/tri-an.png) left -5px no-repeat;
-	width: 194px;
-	height: 146px;
-	position: absolute;
-	top: 0;
-	right: 307px;
+	background: url(../images/4.png) left -5px no-repeat;
+	width: 391px;
+	height: 200px;
 }
 
 .container .top > .content .logo-bottom {
-	background: url(../5.png) left top no-repeat;
+	background: url(../5.png) left -10px no-repeat;
 	width: 413px;
 	height: 134px;
-	margin-bottom: 130px;
+	margin-bottom: 110px;
+    margin-right: 70px;
 }
 
 .container .top > .content .slogan {
@@ -129,10 +119,37 @@
 }
 
 .container .top > .content .clock {
-	background: url(../8.png) left -25px no-repeat;
-	width: 301px;
-	height: 131px;
-	margin-bottom: 160px;
+	background: transparent;
+	width: 328px;
+	height: 92px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 185px;
+	text-align: center;
+}
+
+.container .top > .content .clock .count-down .count {
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 22px;
+	margin-bottom: 6px;
+	color: #414141;
+}
+
+.container .top > .content .clock .count-down .unit {
+	font-size: 16px;
+	line-height: 1;
+	color: #080808;
+}
+
+.container .top > .content .clock .count-down {
+	background: url(../images/count-down.png) -3px top no-repeat;
+	width: 83px;
+	height: 87px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .container .top > .content .video {
@@ -147,9 +164,9 @@
 	justify-content: center;
 	height: 400px;
 	width: 516px;
-    background-image: url(../images/video-c-t.png), url(../images/video-content.png);
-    background-position: left -1px, right -1px;
-    background-repeat: repeat-x, repeat-x;
+	background-image: url(../images/video-c-t.png), url(../images/video-content.png);
+	background-position: left -1px, right -1px;
+	background-repeat: repeat-x, repeat-x;
 	margin: 0px 32px;
 }
 .container .top > .content .video .right .content iframe {
@@ -161,7 +178,13 @@
 	display: flex;
 	flex-direction: column;
 	margin-top: 285px;
-	margin-left: 187px;
+	margin-left: 15%;
+}
+.container .center {
+	margin-bottom: 650px;
+}
+.container .events {
+	margin-top: 0;
 }
 .container .center .exp,
 .container .events .exp {
@@ -169,13 +192,13 @@
 	align-items: center;
 	margin-bottom: 25px;
 	max-width: 800px;
-	line-height: 1.8;
+	/* line-height: 1.8; */
 }
 .container .events .exp {
 	max-width: auto;
 }
 .container .events {
-	margin-top: 565px;
+	/* margin-top: 540px; */
 }
 .container .events .exp {
 	align-items: flex-start;
@@ -193,7 +216,6 @@
 .container .center .exp .icon {
 	background: url(../9.png) left top no-repeat;
 	height: 31px;
-	/* width: 32px; */
 	min-width: 32px;
 	margin-right: 16px;
 	margin-top: 5px;
@@ -224,7 +246,7 @@
 .container .events .exp .descriptions .title {
 	color: #cd2024;
 	font-weight: 900;
-	margin-bottom: 14px;
+	margin-bottom: 0;
 	font-size: 20px;
 }
 
@@ -246,12 +268,36 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	margin-top: 1670px;
+	margin-top: 1600px;
 }
 
+.container .user form > input,
+.container .user form .selections .form-input input {
+	padding: 20px 16px;
+}
 .container .user form > input {
-	padding: 20px 52px;
-	width: 585px;
+	width: 100%;
+	max-width: 700px;
+}
+
+.container .user form {
+	width: 100%;
+	max-width: 735px;
+}
+
+.container .user form .selections .form-input {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.container .user form .selections .form-input label {
+	width: 120px;
+	font-weight: 400;
+}
+
+.container .user form .selections .form-input input {
+	flex-grow: 1;
 }
 .container .user form > input:first-of-type {
 	margin-bottom: 28px;
@@ -261,7 +307,7 @@
 	color: #454140;
 	line-height: 30px;
 	font-size: 20px;
-    font-weight: 300;
+	font-weight: 300;
 }
 
 :-ms-input-placeholder {
@@ -269,14 +315,14 @@
 	color: #454140;
 	line-height: 30px;
 	font-size: 20px;
-    font-weight: 300;
+	font-weight: 300;
 }
 
 ::placeholder {
 	color: #454140;
 	line-height: 30px;
 	font-size: 20px;
-    font-weight: 300;
+	font-weight: 300;
 }
 
 .container .user .wanted {
@@ -286,65 +332,84 @@
 }
 
 .container .user .selections {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    margin-top: 50px;
-    font-size: 20px;
-    font-weight: 300;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: 300;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
-.container .user .selections label{
-    white-space: nowrap;
-    margin-right: 15px;
+.container .user .selections label {
+	white-space: nowrap;
+	margin-right: 15px;
 }
 
-.container .user .selections.cities { 
-    max-width: 650px;
-    align-items: flex-start;
-    margin: 0 auto;
-    margin-top: 12px;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+.container .user .selections.cities {
+	align-items: flex-start;
+	margin: 0 auto;
+	margin-top: 12px;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 .container .user .selections {
-    display: flex;
-    align-items: flex-start;
+	display: flex;
+	align-items: flex-start;
 }
 
-.container .user .selections  .checkbox{
-    margin-right: 15px;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
+.container .user .selections .checkbox {
+	margin-right: 15px;
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
 }
 
-.container .user .selections.cities  .checkbox{
-    width: 136px;
+.container .user .selections.cities .checkbox {
+	width: 136px;
 }
-.container .user .selections  .checkbox > input, .container .user .selections .checkbox  label {
-    margin-right: 15px;
-    white-space: nowrap;
+.container .user .selections .checkbox > input,
+.container .user .selections .checkbox label {
+	margin-right: 15px;
+	white-space: nowrap;
 }
 
-.container .user .feedbacks{
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.container .user .feedbacks {
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .container .user .feedbacks span {
-    font-weight: 300;
-    color: white;
-    margin-bottom: 30px;
-    font-size: 16px;
-    line-height: 24px;
+	font-weight: 300;
+	color: white;
+	margin-bottom: 30px;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 .container .user .feedbacks textarea {
-    width: 590px;
-    height: 430px;
+	width: 590px;
+	height: 280px;
+	padding: 16px;
 }
-    
+
+@media screen and (max-width: 992px) {
+	.container .center,
+	.container .events {
+		margin-left: calc(12px + 5vw);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container .center,
+	.container .events {
+		margin-left: 12px;
+	}
+}
+
