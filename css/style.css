@@ -96,7 +96,7 @@
 	width: 413px;
 	height: 134px;
 	margin-bottom: 110px;
-    margin-right: 70px;
+	margin-right: 70px;
 }
 
 .container .top > .content .slogan {
@@ -178,10 +178,10 @@
 	display: flex;
 	flex-direction: column;
 	margin-top: 285px;
-	margin-left: 15%;
+	margin-left: 16%;
 }
 .container .center {
-	margin-bottom: 650px;
+	margin-bottom: 240px;
 }
 .container .events {
 	margin-top: 0;
@@ -190,10 +190,32 @@
 .container .events .exp {
 	display: flex;
 	align-items: center;
-	margin-bottom: 25px;
+	margin-bottom: 22px;
 	max-width: 800px;
 	/* line-height: 1.8; */
 }
+.container .center .exp {
+	line-height: 2;
+	align-items: flex-start;
+	font-size: 20px;
+}
+
+.container .center .exp:nth-child(1) {
+	max-width: calc(500px + 5vw);
+}
+.container .center .exp:nth-child(2) {
+	max-width: calc(500px + 5vw);
+}
+.container .center .exp:nth-child(3) {
+	max-width: calc(500px + 5vw);
+}
+.container .center .exp:nth-child(4) {
+	max-width: calc(500px + 5vw);
+}
+.container .center .exp:nth-child(5) {
+	max-width: calc(500px + 5vw);
+}
+
 .container .events .exp {
 	max-width: auto;
 }
@@ -218,7 +240,7 @@
 	height: 31px;
 	min-width: 32px;
 	margin-right: 16px;
-	margin-top: 5px;
+	margin-top: 11px;
 }
 
 .container .center .exp.square .icon {
